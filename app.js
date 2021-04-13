@@ -1,7 +1,21 @@
-/* 
-Ajouter un h1, avec un texte (peu importe lequel)
-Faire en sorte qu'au bout de 2 secondes, l'h1 récupère une classe 
-maintitle
-qui dans le css, met du padding, centre le texte et ajoute une bordure
- à mon élément
-*/
+
+function changeMainTitle() {
+    let maintitle = document.querySelector("#titleone");
+    console.log(maintitle);
+    maintitle.classList.toggle("maintitle");
+}
+
+let btn = document.querySelector("#enableBadassTitle");
+console.log(btn);
+
+btn.addEventListener("click", changeMainTitle);
+
+
+function updateTextSpy() {
+    let spy = document.querySelector("#spy");
+    spy.innerHTML = "<span>J'ai un message</span> pour vous...je suis...sushiman!";
+    spy.classList.add("green");
+}
+
+let spy = document.querySelector("#spy");
+spy.addEventListener("mouseover", updateTextSpy);

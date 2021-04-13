@@ -56,3 +56,35 @@ console.log(spy);
 
 spy.classList.toggle("bidule");
 console.log(spy);
+
+/* 
+Ajouter un h1, avec un texte (peu importe lequel)
+Faire en sorte qu'au bout de 2 secondes, l'h1 récupère une classe 
+maintitle
+qui dans le css, met du padding, centre le texte et ajoute une bordure
+ à mon élément
+*/
+
+function changeMainTitle() {
+    let maintitle = document.querySelector("#titleone");
+    console.log(maintitle);
+    maintitle.classList.add("maintitle");
+}
+
+setTimeout(changeMainTitle, 2000);
+
+
+// v2 sans avoir à nommer la fonction
+// setTimeout(function() {
+//     let maintitle = document.querySelector("#titleone");
+//     console.log(maintitle);
+//     maintitle.classList.add("maintitle");
+// }, 2000);
+
+let mymargin = Number(prompt("Entrez une marge"));
+console.log(spy);
+
+spy.style.margin = mymargin + "px";
+spy.style.color = "#00ff2d";
+
+document.body.style.backgroundColor = "green";
