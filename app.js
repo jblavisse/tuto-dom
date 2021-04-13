@@ -19,3 +19,8 @@ function updateTextSpy() {
 
 let spy = document.querySelector("#spy");
 spy.addEventListener("mouseover", updateTextSpy);
+
+let myImg = document.querySelector("#myImg");
+console.log(myImg);
+console.log(myImg.src);
+console.log(myImg.alt);
