@@ -21,10 +21,19 @@ console.log(titles[0].textContent);
 console.log(titles[0].innerHTML);
 
 // Je veux venir modifier le contenu de mon élément HTML
-// titles[0].innerHTML = "Youhou la famiilllllleee";
+// monelement.innerHTML = "<span>Le contenu que je veux</span>";
+// ex -> titles[0].innerHTML = "Youhou la famiilllllleee";
 
 
 // Petit exo
 // Ajouter dans l'HTML un paragraphe (id: spy) ayant pour texte "Je suis un espion"
 // Faire en sorte dans mon fichier JS de modifier le texte de ce paragraphe
 // Pour mettre à la place "J'ai un message caché"
+
+function updateTextSpy() {
+    let spy = document.querySelector("#spy");
+    spy.innerHTML = "<span>J'ai un message</span> pour vous...je suis...sushiman!";
+}
+
+setTimeout(updateTextSpy, 3000);
+
